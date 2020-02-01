@@ -1,6 +1,5 @@
 var roleWorker = require('role.worker');
 
-
 //将采矿、建筑、升级、维修等后勤功能整合到一个worker类型的creep上
 //优先级 1放满spawn和extension 2build建筑 3升级controller
 //寻矿，先找矿，没有矿再找箱子

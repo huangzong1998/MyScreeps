@@ -16,7 +16,8 @@ module.exports.loop = function () {
     
     if(workers.length < 6){
         var newName = 'Worker' + Game.time;
-        Game.spawns['Spawn1'].spawnCreep([WORK,WORK,CARRY,CARRY,MOVE,MOVE,MOVE,MOVE],
+        //成本100*4+50*3+50*5=800
+        Game.spawns['Spawn1'].spawnCreep([WORK,WORK,WORK,WORK,CARRY,CARRY,CARRY,MOVE,MOVE,MOVE,MOVE,MOVE],
             newName,{memory: {role:'worker'}});
     }
     //spawn中显示提示
